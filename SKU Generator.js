@@ -57,7 +57,7 @@ function skuGenerator(){ //take titles from column in sheet, output titles & sku
         return txtHash;
     }
     
-    function onOpen() {
+    function onOpen() { //upon opening spreadsheet create a sub menu and button to run skuGenerator function
       var ss = SpreadsheetApp.getActiveSpreadsheet();
       var entries = [{
         name : "Go!",
