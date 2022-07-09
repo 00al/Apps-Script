@@ -17,7 +17,7 @@ function skuGenerator() {
     var sh = ss.getSheetByName(an);
     var lastRow = sh.getLastRow();
     sh.getRange(lastRow + 1, 1, arN.length, arN[0].length).setValues(arN);
-    ui.alert(i + " new SKUs added to the bottom of " + an);
+    ui.alert(arN.length + " new SKU(s) added to the bottom of " + an);
     // else stop
   } else {
     ui.alert("There are no new SKUs to generate");
